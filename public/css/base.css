@@ -1,0 +1,168 @@
+/* DESC=base elements
+ ----------------------------------------------- */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+h1, h2, h3, h4, h5, h6, strong, b {
+	font-weight: normal;
+	line-height: 100%;
+}
+h6, p, ul, li, body, section, article {
+	color: #666;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 180%;
+}
+h3 {
+	font-size: 160%;
+}
+h4 {
+	font-size: 140%;
+}
+h5 {
+	font-size: 120%;
+}
+h6 {
+	font-size: 100%;
+}
+em, i {
+	font-style: italic;
+}
+del {
+	text-decoration: line-through;
+}
+/* DESC=anchors
+ ----------------------------------------------- */
+a, a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+a.disabled {
+	opacity: .4;
+	filter: alpha(opacity=40);
+	cursor: default;
+}
+/* DESC=forms
+ ----------------------------------------------- */
+label {
+	font-weight: 700;
+	display: block;
+}
+fieldset {
+	padding: 14px;
+	margin: 0 0 18px 0;
+	border: 1px solid #ccc;
+}
+legend {
+	font-weight: bold;
+	font-size: 18px;
+}
+input[type=text] {
+	width: 300px;
+	margin: 6px 6px 18px 0;
+	border: 1px solid #bbb;
+	background: #f6f6f6;
+	padding: 6px;
+}
+input[type=text]:focus {
+	border: 1px solid #999;
+	background: #fff;
+}
+select {
+	border: 1px solid #ccc;
+	background: #f6f6f6;
+	width: 200px;
+}
+select:focus {
+	border: 1px solid #999;
+	background: #fff;
+}
+/* DESC=common
+ ----------------------------------------------- */
+.clear {
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+/* DESC=style setup
+ ----------------------------------------------- */
+body, html {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	margin: 0 auto;
+	overflow-x: hidden;
+	background-color: #eee;
+}
+p {
+	font-weight: 300;
+}
+/* DESC=header
+ ----------------------------------------------- */
+header .logo {
+	color: #222;
+	font-size: 140%;
+	font-family: 'Abel', Arial, Helvetica, sans-serif;
+}
+header .title {
+	color: #434343;
+	font-size: 300%;
+	font-family: 'Abel', Arial, Helvetica, sans-serif;
+}
+.content {
+	padding: 0 20px;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.banner {
+	background-color: #666666;
+	color: #333333;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+	padding: 20px 0;
+}
+/* DESC=list
+ ----------------------------------------------- */
+.list-contents {
+	border: 1px solid #bbb;
+	background: #f6f6f6;
+	padding: 10px;
+}
+.list-contents .list-item {
+	padding: 5px;
+}
+.list-contents .list-item:not(.empty):hover {
+	background: #fff;
+	color: #ccc;
+	cursor: pointer;
+}
+.list-contents .list-item:not(.empty):hover:after {
+	content: ' On second thought, remove this item.';
+	color: #333;
+}
+.list-contents .list-item:not(:last-of-type) {
+	border-bottom: 1px solid #eee;
+}
+.list-item {
+}
+.list-item .remove-button {
+	border: solid 1px #eee;
+	background: url(../images/remove-icon.gif) no-repeat scroll 0 0 #fff;
+	width: 16px;
+	height: 16px;
+	float: right;
+}
